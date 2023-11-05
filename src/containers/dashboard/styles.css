@@ -1,0 +1,182 @@
+.board-container {
+  background-color: #f4f4f5;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  .board {
+    background: #c9c585;
+    border-radius: 22px;
+    width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    position: relative;
+  }
+  .score-board {
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    .wallet {
+      display: flex;
+      background-color: #2e6fc5;
+      border-radius: 16px;
+      box-shadow: 0 0 4px 2px #b4b4b445;
+      .wallet-label {
+        background: #f9d55b;
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        border: 1px solid #e49202;
+        border-radius: 16px;
+        padding: 5px 10px;
+        .wallet-label-icon {
+          color: #e49202;
+          font-size: 18px;
+        }
+        .wallet-label-value {
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+      .wallet-score {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        .wallet-score-icon {
+          color: #fff21b;
+          font-size: 14px;
+          margin-left: 3px;
+          text-shadow: 0px 0px 2px #aca314;
+        }
+      }
+    }
+    .last {
+      display: flex;
+      background-color: #2e6fc5;
+      border-radius: 16px;
+      box-shadow: 0 0 4px 2px #b4b4b445;
+      .last-label {
+        background: #f9d55b;
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        border-radius: 16px;
+        padding: 5px 10px;
+        border: 1px solid #f9d55b;
+        .last-label-icon {
+          color: #ffaf1b;
+          font-size: 18px;
+        }
+        .last-label-value {
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+      .last-score {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        .last-score-icon {
+          color: #fff21b;
+          font-size: 14px;
+          margin-left: 3px;
+          text-shadow: 0px 0px 2px #aca314;
+        }
+      }
+    }
+  }
+  .play-board {
+    height: 300px;
+    width: auto;
+    margin: 20px auto;
+    background-color: #2e746f;
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    .reset-header {
+      color: #f63738;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .game-caution {
+      color: rgb(188, 247, 188);
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .reset-game,
+    .start-game {
+      background-color: #6ec038;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 0;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .reset-game {
+      background-color: #f63738;
+    }
+  }
+
+  .dice-board {
+    border-radius: 22px;
+    background-color: #828887;
+    .dice-row,
+    .bet-row {
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .dice-row {
+      padding-bottom: 0;
+    }
+  }
+}
+.board-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.info-section {
+  flex: 1;
+}
+.attempts {
+  background-color: #ffc83d;
+  padding: 10px;
+  border-radius: 10px;
+  .total-no {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+  }
+}
+.balance {
+  background-color: #58ff3d;
+}
+.score-card {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #e0f1cb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  color: green;
+  font-size: 16px;
+  font-weight: 500;
+  &.lost {
+    background-color: #fce0e0;
+    color: #f63738;
+  }
+}

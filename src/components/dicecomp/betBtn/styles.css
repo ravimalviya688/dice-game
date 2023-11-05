@@ -1,0 +1,23 @@
+.dice-bet {
+  background-color: #c62b2b;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  &.disabled {
+    background-color: rgba(198, 43, 43, 0.62);
+  }
+  .dice-bet-icon {
+    color: #fff21b;
+    font-size: 12px;
+    margin-left: 2px;
+    text-shadow: 0px 0px 2px #aca314;
+  }
+}
